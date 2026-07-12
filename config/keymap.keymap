@@ -334,7 +334,106 @@
 &mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                   &kp MINUS    &kp W  &lt 3 R  &kp Y  &kp P            
 &kp E           &kp I           &kp A  &kp O              &kp TAB                                           &kp K        &kp T  &kp N    &kp S  &kp H            
 &kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN  &none      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp LEFT_WIN    &kp LALT        &mo 2  &lt 9 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 7 ENTER &none  &lt 11 DELETE    
+&kp LEFT_WIN    &kp LALT        &mo 2  &lt 9 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 7 ENTER                  &none  &lt 11 DELETE    
+            >;
+        };
+
+        AUTO_MOUSE {
+            bindings = <
+&to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &trans         &trans                                          &to_layer_0 MINUS  &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P
+&to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O  &to_layer_0 TAB                                 &to_layer_0 K      &mkp MB1       &to_layer_0 N  &to_layer_0 S  &to_layer_0 H
+&trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V    &trans      &trans             &to_layer_0 G      &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B
+&trans         &trans         &trans         &trans         &trans           &trans      &to_layer_0 COMMA  &trans                                           &trans         &trans
+            >;
+        };
+
+        MANUAL_MOUSE {
+            bindings = <
+&kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                         &none   &kp RC(LG(LEFT))  &mo 3        &kp RC(LG(RIGHT_ARROW))  &none
+&kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                                         &none   &mkp MB1          &mkp MB3     &mkp MB2                 &none
+&kp LCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans      &trans     &none   &mkp MB4          &kp LG(TAB)  &mkp MB5                 &none
+&trans            &trans           &trans          &trans           &trans                   &trans      &kp COMMA  &trans                                 &trans                   &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &mkp_exit_AML MB1  &trans  &mkp_exit_AML MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans             &trans
+            >;
+        };
+
+        QWERTY {
+            bindings = <
+&kp Q             &kp W   &kp E   &kp R   &kp T                                 &kp Y   &kp U  &lt 3 I  &kp O      &kp P
+&kp A             &kp S   &kp D   &kp F   &kp G                                 &kp H   &kp J  &kp K    &kp L      &kp MINUS
+&mt LCTRL DELETE  &kp Z   &kp X   &kp C   &kp V   &kp PRINTSCREEN      &kp TAB  &kp B   &kp N  &kp M    &kp COMMA  &kp DOT
+&trans            &trans  &trans  &trans  &trans  &trans               &trans   &trans                  &trans     &trans
+            >;
+        };
+
+        minimum33key {
+            bindings = <
+&mt LEFT_WIN Q    &mt RALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                         &kp MINUS  &kp W  &lt 3 R  &kp Y  &kp P
+&kp E             &kp I       &kp A  &kp O              &kp TAB                                 &kp K      &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X       &kp C  &kp V              &mt LCTRL QUESTION  &none       &none   &kp G      &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&none             &none       &none  &trans             &trans              &trans      &trans  &trans                     &trans &lt 11 DELETE
+            >;
+        };
+
+        ANDROID {
+            bindings = <
+&kp Q         &kp L         &kp U  &kp F             &trans                                &trans       &kp W  &lt 3 R  &kp Y  &kp P
+&kp E         &kp I         &kp A  &kp O             &kp TAB                               &kp K        &kp T  &kp N    &kp S  &kp H
+&kp RCTRL     &kp Z         &kp X  &kp C             &kp V    &kp PRINTSCREEN      &trans  &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &lt 10 BACKSPACE  &trans   &trans               &trans  &lt 8 ENTER                  &trans &lt 11 DELETE
+            >;
+        };
+
+        SYMBOLS {
+            bindings = <
+&kp PLUS        &kp LS(N7)       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp QUESTION                                         &kp EQUAL         &hidari_macro      &sita_macro       &ue_macro  &migi_macro
+&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp INT_YEN                                          &kp SEMICOLON     &int5_parenthesis  &kp LEFT_BRACKET  &mkp MB2   &kp LS(INT_RO)
+&trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp LS(INTERNATIONAL_3)  &trans          &trans      &kp SINGLE_QUOTE  &mkp MB4           &kp ESCAPE        &mkp MB5   &kp LA(LG(K))
+&kp LEFT_WIN    &kp LEFT_ALT     &mo 2         &lt 9 DELETE          &mt LEFT_SHIFT SPACE     &kp DELETE      &kp PERIOD  &lt 7 ENTER                                            &trans     &trans
+            >;
+        };
+
+        A_SYMBOLS {
+            bindings = <
+&kp TILDE  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION                              &trans         &trans                &trans                 &trans             &kp UNDERSCORE
+&kp GRAVE  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp NON_US_BACKSLASH                      &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT            &kp UNDERSCORE
+&trans     &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PIPE              &trans      &trans  &kp COLON      &trans                &trans                 &kp DOUBLE_QUOTES  &none
+&trans     &trans           &trans                &trans                 &trans                &trans      &trans  &trans                                                      &trans             &trans
+            >;
+        };
+
+        NUM {
+            bindings = <
+&kp LG(UP_ARROW)   &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                          &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
+&kp HOME           &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                                          &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
+&kp LC(PAGE_DOWN)  &kp RC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp RC(LG(RIGHT_ARROW))  &kp LG(DOWN_ARROW)       &trans      &trans      &kp LS(SINGLE_QUOTE)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)
+&trans             &trans                  &trans          &trans                   &trans                   &trans      &kp PERIOD  &trans                                      &trans     &trans
+            >;
+        };
+
+        A_NUM {
+            bindings = <
+&kp LG(UP_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                      &kp PLUS      &kp N7  &kp N8  &kp N9  &kp N0
+&kp HOME          &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                                      &kp MINUS     &kp N4  &kp N5  &kp N6  &kp SLASH
+&trans            &kp RC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(RG(RIGHT_ARROW))  &trans                   &trans      &trans  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&trans            &trans                  &trans          &trans                   &trans                   &trans      &trans  &trans                        &trans  &trans
+            >;
+        };
+
+        BlueTooth+Command {
+            bindings = <
+&trans          &trans     &trans     &trans     &trans                              &bt BT_SEL 0  &bt BT_SEL 1  &mo 3   &BT2    &bt BT_SEL 3
+&trans          &trans     &trans     &trans     &trans                              &trans        &trans        &trans  &trans  &bt BT_SEL 4
+&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp RC(V)  &trans      &bootloader  &trans        &trans        &trans  &trans  &bt BT_CLR
+&trans          &trans     &trans     &trans     &trans     &trans      &trans       &trans                              &trans  &trans
             >;
         };
     };
