@@ -291,6 +291,14 @@
             >;
         };
 
+        Scroll {
+            bindings = <
+&none  &trans          &trans     &trans     &trans     &trans                          &trans        &trans        &trans  &trans  &trans        &none
+&none  &trans          &trans     &trans     &trans     &trans                          &trans        &trans        &trans  &trans  &trans        &none
+&none  &trans          &trans     &trans     &trans     &trans     &none   &none        &trans        &mkp MB1      &trans  &trans  &trans        &none
+&none  &trans          &trans     &trans     &trans     &trans     &none   &none        &trans        &mkp MB1      &trans  &trans  &trans        &none
+&none  &trans          &trans     &trans     &trans     &trans     &trans  &trans       &trans        &none         &none   &trans  &trans        &none
+
         Simbol {
             bindings = <
 &none  &trans          &trans           &trans        &trans                &trans                                           &trans            &trans             &trans            &trans     &trans          &none
