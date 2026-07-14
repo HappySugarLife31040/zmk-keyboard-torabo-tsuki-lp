@@ -315,9 +315,9 @@
         layer_1 {
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
-&none    &to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &trans         &trans                                          &to_layer_0 MINUS  &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P　&none    
-&none    &to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O  &to_layer_0 TAB  &none        &none             &to_layer_0 K      &mkp MB1       &to_layer_0 N  &to_layer_0 S  &to_layer_0 H　&none    
-&none    &trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V    &trans      &trans             &to_layer_0 G      &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B　&none    
+&none    &to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &trans         &trans                                          &to_layer_0 MINUS  &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P &none    
+&none    &to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O  &to_layer_0 TAB  &none        &none             &to_layer_0 K      &mkp MB1       &to_layer_0 N  &to_layer_0 S  &to_layer_0 H &none    
+&none    &trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V    &trans      &trans             &to_layer_0 G      &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B &none    
 &none    &trans         &trans         &trans         &trans         &trans           &trans      &to_layer_0 COMMA  &trans             &none           &none         &trans         &trans        &none    
             >;
         };
