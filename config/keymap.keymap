@@ -322,15 +322,7 @@
             >;
         };
 
-        layer_2 {
-            bindings = <
-&none    &trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans  &trans             &trans　&none    
-&none    &trans  &trans  &trans  &trans  &trans  &none       &none   &trans  &mkp_exit_AML MB1  &trans  &mkp_exit_AML MB2  &trans　&none    
-&none    &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans  &trans             &trans　&none    
-&none    &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans   &none              &none                    &trans             &trans　&none    
-        };
-
-        layer_3 {
+        Simbol {
             bindings = <
 &none    &trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans  &trans             &trans　&none 
 &none    &kp PLUS        &kp LS(N7)       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp QUESTION                                         &kp EQUAL         &hidari_macro      &sita_macro       &ue_macro  &migi_macro　&none    
