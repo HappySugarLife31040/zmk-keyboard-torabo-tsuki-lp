@@ -10,25 +10,23 @@
         L0int4 {
             bindings = <&L0int4_macro>;
             key-positions = <34 33>;
-            layers = <0 1 2 3 7 9 11>;
+            layers = <0 1 2 3>;
         };
 
         L0int5 {
             bindings = <&L0int5_macro>;
             key-positions = <28 27>;
-            layers = <0 1 2 3 7 9 11>;
+            layers = <0 1 2 3>;
         };
 
         combo_android {
             bindings = <&kp LC(SPACE)>;
-            key-positions = <28 27>;
-            layers = <6 8 10>;   // ANDROIDだけ
+            key-positions = <28 27>;   // ANDROIDだけ
         };
 
         combo_android2 {
             bindings = <&android_henkan>;
-            key-positions = <34 33>;
-            layers = <6 8 10>;   // ANDROIDだけ
+            key-positions = <34 33>;   // ANDROIDだけ
         };
 
         PW {
@@ -171,7 +169,7 @@
         BT2: BT2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 6>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 0>;
 
             label = "BT3";
         };
@@ -179,7 +177,7 @@
         android_henkan: android_henkan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 6 &kp LC(SPACE)>;
+            bindings = <&to 0 &kp LC(SPACE)>;
             label = "ANDROID_HENKAN";
         };
 
@@ -275,19 +273,19 @@
             bindings = <
 &none  &none           &none           &none  &none              &none                                             &none        &none  &none    &none    &none         &none
 &none  &mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                   &kp MINUS    &kp W  &lt 2 R  &kp Y    &kp P         &none
-&none  &kp E           &kp I           &kp A  &kp O              &kp TAB               &none            &none      &kp K        &kp T  &kp N    &lt 1 S  &lt 1 H       &none
+&none  &kp E           &kp I           &kp A  &kp O              &kp TAB               &none            &none      &kp K        &kp T  &lt 1 N  &lt 1 S  &lt 1 H       &none
 &none  &kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN  &none      &kp G        &kp D  &kp M    &kp J    &kp B         &none
-&none  &kp LEFT_WIN    &kp LALT        &mo 1  &lt 4 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 3 ENTER  &none  &none    &none    &lt 4 DELETE  &none
+&none  &kp LEFT_WIN    &kp LALT        &mo 1  &lt 4 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 3 ENTER  &none  &none    &none    &lt 5 DELETE  &none
             >;
         };
 
         MANUAL_MOUSE {
             bindings = <
-&none  &none             &none            &none           &none            &none                                       &none          &none             &none        &none                    &none   &none
-&none  &kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                     &none          &kp RC(LG(LEFT))  &mo 3        &kp RC(LG(RIGHT_ARROW))  &none   &none
-&none  &kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &none   &none      &kp PAGE_UP    &mkp MB1          &mkp MB2     &trans                   &none   &none
-&none  &kp LCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans  &trans     &kp PAGE_DOWN  &mkp MB4          &kp LG(TAB)  &mkp MB5                 &none   &none
-&none  &trans            &trans           &trans          &trans           &trans                   &trans  &kp COMMA  &trans         &none             &none        &trans                   &trans  &none
+&none  &none             &none            &none           &none            &none                                       &none           &none             &none        &none                    &none   &none
+&none  &kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                     &none           &kp RC(LG(LEFT))  &none        &kp RC(LG(RIGHT_ARROW))  &none   &none
+&none  &kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &none   &none      &msc SCRL_UP    &mkp MB1          &none        &mkp MB2                 &none   &none
+&none  &kp LCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans  &trans     &msc SCRL_DOWN  &mkp MB4          &kp LG(TAB)  &mkp MB5                 &none   &none
+&none  &trans            &trans           &trans          &trans           &trans                   &trans  &kp COMMA  &trans          &none             &none        &trans                   &trans  &none
             >;
         };
 
