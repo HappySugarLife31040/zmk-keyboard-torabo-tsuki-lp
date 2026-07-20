@@ -17,3 +17,8 @@
 &size_l_transform {
     col-offset = <7>;
 };
+
+&pointing_device {
+    scroll-layer = <3>;
+    scroll-divider = <4>;
+};
