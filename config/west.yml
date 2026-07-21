@@ -1,9 +1,13 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: sekigon-gonnoc
-      url-base: https://github.com/sekigon-gonnoc
+  - name: zmkfirmware
+    url-base: https://github.com/zmkfirmware
+
+  - name: sekigon-gonnoc
+    url-base: https://github.com/sekigon-gonnoc
+
+  - name: HappySugarLife31040
+    url-base: https://github.com/HappySugarLife31040
   projects:
     - name: zmk
       remote: zmkfirmware
