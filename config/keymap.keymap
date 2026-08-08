@@ -45,7 +45,7 @@
         };
 
         zikken {
-            bindings = <&kp C>;
+            bindings = <&kp D>;
             key-positions = <58 57>;
         };
 
