@@ -10,13 +10,13 @@
         L0int4 {
             bindings = <&L0int4_macro>;
             key-positions = <34 33>;
-            layers = <0 1 2 3>;
+            layers = <0 2 3 4>;
         };
 
         L0int5 {
             bindings = <&L0int5_macro>;
             key-positions = <28 27>;
-            layers = <0 1 2 3>;
+            layers = <0 2 3 4>;
         };
 
         combo_android {
@@ -40,7 +40,7 @@
         };
 
         to_manualmouse {
-            bindings = <&tog 1>;
+            bindings = <&tog 2>;
             key-positions = <21 22>;
         };
 
@@ -50,12 +50,12 @@
         };
 
         qwerty {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <0 1>;
         };
 
         m32key_mode {
-            bindings = <&tog 5>;
+            bindings = <&tog 6>;
             key-positions = <1 2>;
         };
     };
@@ -78,7 +78,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 1>;
+                <&sl 2>;
 
             label = "MKP_EXIT_AML";
         };
@@ -272,10 +272,20 @@
         layer_0 {
             bindings = <
 &none  &none           &none           &none  &none              &none                                             &none        &none  &none    &none    &none         &none
-&none  &mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                   &kp MINUS    &kp W  &lt 2 R  &kp Y    &kp P         &none
-&none  &kp E           &kp I           &kp A  &kp O              &kp TAB               &none            &none      &kp K        &kp T  &lt 1 N  &lt 1 S  &lt 1 H       &none
+&none  &mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                   &kp MINUS    &kp W  &lt 3 R  &kp Y    &kp P         &none
+&none  &kp E           &kp I           &kp A  &kp O              &kp TAB               &none            &none      &kp K        &kp T  &lt 2 N  &lt 2 S  &lt 2 H       &none
 &none  &kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN  &none      &kp G        &kp D  &kp M    &kp J    &kp B         &none
-&none  &kp LEFT_WIN    &kp LALT        &mo 1  &lt 4 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 3 ENTER  &none  &none    &none    &lt 5 DELETE  &none
+&none  &kp LEFT_WIN    &kp LALT        &mo 2  &lt 5 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 4 ENTER  &none  &none    &none    &lt 6 DELETE  &none
+            >;
+        };
+
+        AML {
+            bindings = <
+&trans  &trans         &trans         &trans         &trans         &trans                           &trans             &trans         &trans         &trans         &trans         &trans
+&trans  &to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &trans         &trans                           &to_layer_0 MINUS  &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P  &trans
+&trans  &to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O  &to_layer_0 TAB  &trans  &trans  &to_layer_0 K      &mkp MB1       &to_layer_0 N  &to_layer_0 S  &to_layer_0 H  &trans
+&trans  &trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V    &trans  &trans  &to_layer_0 G      &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B  &trans
+&trans  &trans         &trans         &trans         &trans         &trans           &trans  &trans  &trans             &trans         &trans         &trans         &trans         &trans
             >;
         };
 
@@ -305,7 +315,7 @@
 &none  &kp PLUS        &kp LS(N7)       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp QUESTION                                     &kp EQUAL         &hidari_macro      &sita_macro       &ue_macro  &migi_macro     &none
 &none  &kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp INT_YEN              &none       &none       &kp SEMICOLON     &int5_parenthesis  &kp LEFT_BRACKET  &mkp MB2   &kp LS(INT_RO)  &none
 &none  &trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp LS(INTERNATIONAL_3)  &trans      &trans      &kp SINGLE_QUOTE  &mkp MB4           &kp ESCAPE        &mkp MB5   &kp LA(LG(K))   &none
-&none  &kp LEFT_WIN    &kp LEFT_ALT     &mo 1         &lt 4 DELETE          &mt LEFT_SHIFT SPACE     &kp DELETE  &kp PERIOD  &lt 3 ENTER       &none              &none             &trans     &trans          &none
+&none  &kp LEFT_WIN    &kp LEFT_ALT     &mo 2         &lt 5 DELETE          &mt LEFT_SHIFT SPACE     &kp DELETE  &kp PERIOD  &lt 4 ENTER       &none              &none             &trans     &trans          &none
             >;
         };
 
@@ -322,7 +332,7 @@
         BlueTooth+Command {
             bindings = <
 &none  &trans          &trans     &trans     &trans     &trans                          &trans        &trans        &trans  &trans  &trans        &none
-&none  &trans          &trans     &trans     &trans     &trans                          &bt BT_SEL 0  &bt BT_SEL 1  &mo 3   &BT2    &bt BT_SEL 3  &none
+&none  &trans          &trans     &trans     &trans     &trans                          &bt BT_SEL 0  &bt BT_SEL 1  &mo 4   &BT2    &bt BT_SEL 3  &none
 &none  &trans          &trans     &trans     &trans     &trans     &none   &none        &trans        &trans        &trans  &trans  &bt BT_SEL 4  &none
 &none  &kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp RC(V)  &trans  &bootloader  &trans        &trans        &trans  &trans  &bt BT_CLR    &none
 &none  &trans          &trans     &trans     &trans     &trans     &trans  &trans       &trans        &none         &none   &trans  &trans        &none
