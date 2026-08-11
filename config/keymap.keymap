@@ -271,18 +271,18 @@
 
         layer_0 {
             bindings = <
-&none  &none           &none           &none  &none              &none                                             &none        &none  &none    &none    &none         &none
-&none  &mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                   &kp MINUS    &kp W  &lt 3 R  &kp Y    &kp P         &none
-&none  &kp E           &kp I           &kp A  &kp O              &kp TAB               &none            &none      &kp K        &kp T  &lt 2 N  &lt 2 S  &lt 2 H       &none
-&none  &kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN  &none      &kp G        &kp D  &kp M    &kp J    &kp B         &none
-&none  &kp LEFT_WIN    &kp LALT        &mo 2  &lt 5 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 4 ENTER  &none  &none    &none    &lt 6 DELETE  &none
+&none  &none           &none           &none  &none              &none                                             &none        &none  &none    &none  &none         &none
+&none  &mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                   &kp MINUS    &kp W  &lt 3 R  &kp Y  &kp P         &none
+&none  &kp E           &kp I           &kp A  &kp O              &kp TAB               &none            &none      &kp K        &kp T  &lt 2 N  &kp S  &kp H         &none
+&none  &kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN  &none      &kp G        &kp D  &kp M    &kp J  &kp B         &none
+&none  &kp LEFT_WIN    &kp LALT        &mo 2  &lt 5 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 4 ENTER  &none  &none    &none  &lt 6 DELETE  &none
             >;
         };
 
         AML {
             bindings = <
 &trans  &trans         &trans         &trans         &trans         &trans                           &trans             &trans         &trans         &trans         &trans         &trans
-&trans  &to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &trans         &trans                           &to_layer_0 MINUS  &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P  &trans
+&trans  &trans         &to_layer_0 L  &to_layer_0 U  &trans         &trans                           &to_layer_0 MINUS  &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P  &trans
 &trans  &to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O  &to_layer_0 TAB  &trans  &trans  &to_layer_0 K      &mkp MB1       &to_layer_0 N  &to_layer_0 S  &to_layer_0 H  &trans
 &trans  &trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V    &trans  &trans  &to_layer_0 G      &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B  &trans
 &trans  &trans         &trans         &trans         &trans         &trans           &trans  &trans  &trans             &trans         &trans         &trans         &trans         &trans
