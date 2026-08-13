@@ -338,5 +338,23 @@
 &none  &trans          &trans     &trans     &trans     &trans     &trans  &trans       &trans        &none         &none   &trans  &trans        &none
             >;
         };
+        Scroll_V {
+            bindings = <
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none   &trans  &trans  &none
+            >;
+        };
+        Scroll_H {
+            bindings = <
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none   &trans  &trans  &none
+            >;
+        };
     };
 };
