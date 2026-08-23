@@ -3,6 +3,18 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+/ {
+    input_processors {
+        zip_scroll_x_scaler: zip_scroll_x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_HWHEEL>;
+            track-remainders;
+        };
+    };
+};
+
 
 
 &pointing_listener {
@@ -11,11 +23,12 @@
         &zip_temp_layer 1 10000
     >;
 
-    scroll {
+       scroll {
         layers = <4>;
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
+            &zip_scroll_x_scaler 0 1
         >;
     };
 
