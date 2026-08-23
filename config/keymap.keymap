@@ -309,6 +309,25 @@
             >;
         };
 
+        Scroll_V {
+            bindings = <
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none   &trans  &trans  &none
+            >;
+        };
+        Scroll_H {
+            bindings = <
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans    &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none   &trans  &trans  &none
+            >;
+        };
+
         Simbol {
             bindings = <
 &none  &trans          &trans           &trans        &trans                &trans                                           &trans            &trans             &trans            &trans     &trans          &none
@@ -336,24 +355,6 @@
 &none  &trans          &trans     &trans     &trans     &trans     &none   &none        &trans        &trans        &trans  &trans  &bt BT_SEL 4  &none
 &none  &kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp RC(V)  &trans  &bootloader  &trans        &trans        &trans  &trans  &bt BT_CLR    &none
 &none  &trans          &trans     &trans     &trans     &trans     &trans  &trans       &trans        &none         &none   &trans  &trans        &none
-            >;
-        };
-        Scroll_V {
-            bindings = <
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans    &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none   &trans  &trans  &none
-            >;
-        };
-        Scroll_H {
-            bindings = <
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &mkp MB1  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans    &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none     &none   &trans  &trans  &none
             >;
         };
     };
