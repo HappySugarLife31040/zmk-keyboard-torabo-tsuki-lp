@@ -275,7 +275,7 @@
 &none  &mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                   &kp MINUS    &lt 3 W  &lt 4 R  &lt 5 Y  &kp P         &none
 &none  &kp E           &kp I           &kp A  &kp O              &kp TAB               &none            &none      &kp K        &kp T    &lt 2 N  &kp S    &kp H         &none
 &none  &kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN  &none      &kp G        &kp D    &kp M    &kp J    &kp B         &none
-&none  &kp LEFT_WIN    &kp LALT        &mo 2  &lt 5 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 4 ENTER  &none    &none    &none    &lt 6 DELETE  &none
+&none  &kp LEFT_WIN    &kp LALT        &mo 2  &lt 7 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE    &kp COMMA  &lt 6 ENTER  &none    &none    &none    &lt 8 DELETE  &none
             >;
         };
 
