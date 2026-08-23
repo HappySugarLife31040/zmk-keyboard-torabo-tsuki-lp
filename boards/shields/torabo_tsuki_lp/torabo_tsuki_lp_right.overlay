@@ -5,20 +5,18 @@
 
 / {
     input_processors {
-        zip_scroll_x_scaler: zip_scroll_x_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
+        zip_y_to_scroll_mapper: zip_y_to_scroll_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
             type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_HWHEEL>;
-            track-remainders;
+            map = <INPUT_REL_Y INPUT_REL_WHEEL>;
         };
 
-        zip_scroll_y_scaler: zip_scroll_y_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
+        zip_x_to_scroll_mapper: zip_x_to_scroll_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
             type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL>;
-            track-remainders;
+            map = <INPUT_REL_X INPUT_REL_HWHEEL>;
         };
     };
 };
