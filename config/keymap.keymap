@@ -334,7 +334,7 @@
 &none  &trans          &trans           &trans        &trans                &trans                                           &trans            &trans             &trans            &trans     &trans          &none
 &none  &kp PLUS        &kp LS(N7)       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp QUESTION                                     &kp EQUAL         &hidari_macro      &sita_macro       &ue_macro  &migi_macro     &none
 &none  &kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp INT_YEN              &none       &none       &kp SEMICOLON     &int5_parenthesis  &kp LEFT_BRACKET  &mkp MB2   &kp LS(INT_RO)  &none
-&none  &trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp LS(INTERNATIONAL_3)  &trans      &trans      &kp SINGLE_QUOTE  &mkp MB4           &kp ESCAPE        &mkp MB5   &kp LA(LG(K))   &none
+&none  &trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp LS(INTERNATIONAL_3)  &trans      &trans      &kp SINGLE_QUOTE  &mkp MB4           &kp ESCAPE        &mkp MB5   &kp ESCAPE      &none
 &none  &kp LEFT_WIN    &kp LEFT_ALT     &mo 2         &lt 5 DELETE          &mt LEFT_SHIFT SPACE     &kp DELETE  &kp PERIOD  &lt 4 ENTER       &none              &none             &trans     &trans          &none
             >;
         };
