@@ -10,23 +10,11 @@
         L0int4 {
             bindings = <&L0int4_macro>;
             key-positions = <34 33>;
-            layers = <0 2 3 4>;
         };
 
         L0int5 {
             bindings = <&L0int5_macro>;
             key-positions = <28 27>;
-            layers = <0 2 3 4>;
-        };
-
-        combo_android {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <28 27>;   // ANDROIDだけ
-        };
-
-        combo_android2 {
-            bindings = <&android_henkan>;
-            key-positions = <34 33>;   // ANDROIDだけ
         };
 
         PW {
@@ -47,16 +35,6 @@
         zikken {
             bindings = <&kp E>;
             key-positions = <58 57>;
-        };
-
-        qwerty {
-            bindings = <&tog 5>;
-            key-positions = <0 1>;
-        };
-
-        m32key_mode {
-            bindings = <&tog 6>;
-            key-positions = <1 2>;
         };
     };
 
